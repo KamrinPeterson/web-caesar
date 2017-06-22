@@ -40,8 +40,8 @@ form = """
 
 """
 
-@app.route("/")
-def encript():
+@app.route("/", methods=['POST'])
+def encript(rot, text):
     return form
 
 @app.route("/")
